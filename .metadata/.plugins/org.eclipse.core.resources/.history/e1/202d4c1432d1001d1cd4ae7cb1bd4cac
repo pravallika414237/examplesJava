@@ -1,0 +1,26 @@
+package durgaJava8;
+class Admin{
+	int id;
+	String name;
+	double income;
+	public Admin(int id, String name, double income) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.income = income;
+	}
+	@Override
+	public String toString() {
+		return "Admin [id=" + id + ", name=" + name + ", income=" + income + "]";
+	}
+	
+	
+}
+public class ABCComapny {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

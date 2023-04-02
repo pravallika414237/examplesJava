@@ -1,0 +1,17 @@
+package basicpackage;
+
+public class ArraysShallowDeep {
+
+	public static void main(String[] args) {
+		int []a= {12,32,43,42,89};
+		int []b=a.clone();
+		int[]c=a;
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		
+		
+
+	}
+
+}

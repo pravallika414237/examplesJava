@@ -1,0 +1,5 @@
+package DecoratorDesginPattern;
+
+public class SpinachTopping {
+
+}

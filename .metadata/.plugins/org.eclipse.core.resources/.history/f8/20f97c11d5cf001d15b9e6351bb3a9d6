@@ -1,0 +1,8 @@
+package durgaJava8;
+
+public class ObjectFunctional {
+
+	public static void main(String [] args) {
+		
+	}
+}

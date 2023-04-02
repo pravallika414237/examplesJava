@@ -1,0 +1,51 @@
+package durgaJava8;
+
+import java.util.*;
+import java.util.stream.Collectors;
+
+class Admin {
+	int id;
+	String name;
+	double income;
+
+	public Admin(int id, String name, double income) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.income = income;
+	}
+
+	@Override
+	public String toString() {
+		return "Admin [id=" + id + ", name=" + name + ", income=" + income + "]";
+	}
+
+}
+
+public class ABCComapny {
+
+	public static void main(String[] args) {
+		ArrayList<Admin> l = new ArrayList<>();
+		l.add(new Admin(101, "Hari", 45000.00));
+		l.add(new Admin(107, "nivas", 5000.00));
+		l.add(new Admin(109, "umini", 30000.00));
+		l.add(new Admin(102, "prav", 55000.00));
+		l.add(new Admin(103, "minu", 10000.00));
+
+		List<Admin> filtered= l.stream().filter(a -> a.income > 15000.00).collect(Collectors.toList());
+		//.forEach(System.out::println);
+		l.stream().map(e -> {
+			e.income = e.income + 500.00;
+			return e;
+		}).collect(Collectors.toList()).forEach(System.out::println);
+
+		System.out.println("starts with p  -- 1500");
+		l.stream().filter((a) -> a.name.startsWith("p")).map(e -> {
+			e.income = e.income - 1500.00;
+			return e;
+		}).collect(Collectors.toList()).forEach(System.out::println);
+		
+		l.stream().sorted().toString();
+	}
+
+}

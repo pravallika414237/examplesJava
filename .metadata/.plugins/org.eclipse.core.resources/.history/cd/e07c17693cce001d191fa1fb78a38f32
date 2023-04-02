@@ -1,0 +1,23 @@
+package assignment;
+
+import java.util.Scanner;
+
+public class AsifQuestion {
+
+	public static void main(String [] args) {
+		
+		Scanner sc= new Scanner(System.in);
+		String input = sc.nextLine();
+		
+		
+		int lengthOfstring = input.length();
+		
+		
+	if(input.endsWith("0" || "1" || "2")) {
+		input =input.concat((toString(lengthOfstring));
+		
+	}
+	
+		
+	}
+}

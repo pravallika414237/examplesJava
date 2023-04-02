@@ -1,0 +1,20 @@
+package collectionsExamples;
+import java.util.*;
+public class example3 {
+
+	public static void main(String[] args) {
+		
+List  <String> l = new  ArrayList <String> ();
+	//a list interface can be implemented using arraylist , linkedlist , vector, stack.
+l.add("hi");
+l.add("java");
+l.add("abcd");
+l.add("html");
+l.add("csssss");
+
+Iterator i = l.iterator();
+
+System.out.println(i.next());
+}
+
+}

@@ -1,0 +1,15 @@
+package DecoratorDesginPattern;
+
+public  abstract class PizzaDecorator implements Pizza
+{
+   private Pizza p;
+   PizzaDecorator(Pizza p1){
+	   this.p= p1;
+   }
+	public String getDesc() {
+		return "not yet decided";
+		
+	}
+	
+	
+}

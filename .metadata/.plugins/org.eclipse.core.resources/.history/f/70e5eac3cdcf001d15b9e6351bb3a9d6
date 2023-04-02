@@ -1,0 +1,27 @@
+package durgaJava8;
+
+@FunctionalInterface
+interface NoArgLamdaInterface{
+	
+	public void m1();
+	
+}
+
+@FunctionalInterface
+interface ArgLamdaInterface{
+	
+	public void m1();
+	
+}
+
+
+public class NoArgLamda {
+
+	public static void main(String[] args) {
+		
+		NoArgLamdaInterface a = () -> System.out.println("hello");
+		
+		a.m1();
+	}
+
+}

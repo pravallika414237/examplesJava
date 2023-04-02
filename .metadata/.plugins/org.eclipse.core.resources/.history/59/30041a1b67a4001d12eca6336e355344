@@ -1,0 +1,29 @@
+package lamdaExpression;
+
+import java.util.Scanner;
+
+@FunctionalInterface
+interface Validation {
+
+	boolean validate(String s1, String s2);
+}
+
+public class Source {
+
+	public static void main(String[] args) {
+		
+		Validation v = (s1, s2) -> {
+			if(s1.equals("ABC") && s2.equals("DEF")) {
+				return true;
+			}else {
+				return false;
+			}
+		};
+
+		Scanner sc = new Scanner(System.in);
+		String uname = sc.nextLine();
+		String upass = sc.nextLine();
+		//Source v = new Source();
+		System.out.println(v.validate(uname, upass));
+	}
+}

@@ -1,0 +1,11 @@
+pravallikapd
+8000
+pravallikap
+javapwd
+hi1
+userName|passWord|accNo|balance
+userName|passWord|accNo|balance
+userName|passWord|accNo|balance
+userName|passWord|accNo|balance
+userName|passWord|accNo|balance
+hello2

@@ -1,0 +1,22 @@
+package durgaJava8;
+import java.util.*;
+class Employee{
+	int empid;
+	String name;
+	boolean admin;
+    String dept;
+    
+    Employee(int empid,String name,boolean admin,String dept){
+    	this.empid = empid;
+    	this.name = name;
+    	this.admin= admin;
+       this.dept= dept;
+    	
+    }
+}
+public class ObjectFunctional {
+
+	public static void main(String [] args) {
+		ArrayList <Employee> = 
+	}
+}

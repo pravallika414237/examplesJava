@@ -1,0 +1,10 @@
+package MainClass;
+
+import LogicClass.ATMLogic;
+
+public class ATMUIMain  {
+   
+	public static void main(String [] args) {
+	ATMLogic a =ATMLogic.getInstance();
+	
+}}

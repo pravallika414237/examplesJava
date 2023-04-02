@@ -1,0 +1,11 @@
+package DecoratorDesginPattern;
+
+public class PannerTopping extends PizzaDecorator{
+
+	@Override
+	public double getPrice() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

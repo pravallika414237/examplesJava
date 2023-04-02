@@ -1,0 +1,31 @@
+package durgaJava8;
+import java.util.function.*;
+class Employee{
+	int empid;
+	String name;
+	int salary;
+}
+public class FunctionExample {
+
+	public static void main(String[] args) {
+		
+		Predicate<Employee> p = (e) -> e.empid>20;
+		
+		Function <Employee,Employee> fun = new Function<Employee,Employee>(){
+			
+			@Override
+			public Employee apply(Employee e) {
+				
+				if(p.test(e)) {
+					e.salary = e.salary+100;
+					
+				}
+				return e;
+				
+			}
+			
+		};
+
+	}
+
+}

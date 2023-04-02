@@ -1,0 +1,13 @@
+package durgaJava8;
+class Employee{
+	int empid;
+	String name;
+	boolean admin;
+    String dept;
+}
+public class ObjectFunctional {
+
+	public static void main(String [] args) {
+		ArrayList
+	}
+}

@@ -1,0 +1,18 @@
+package collectionsExamples;
+
+import java.util.*;
+
+public class LinkedListExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+List <Integer> l = new LinkedList <Integer>();
+l.add(12);
+l.add(122);
+l.add(512);
+l.add(18452);
+
+System.out.println(l);
+	}
+
+}

@@ -1,0 +1,154 @@
+package midland_bakery;
+
+import java.io.IOException;
+import java.util.*;
+
+public class mainBakery {
+	public static void generateBill(int total) throws IOException {
+		
+		System.out.println();
+		System.out.println("****** Thankyou For Ordering *****");
+		System.out.println();
+		System.out.println("****** Your Bill is : " + total +" " + "****");
+	}
+	public static void main(String[] args) throws IOException {
+		int FrenchFries = 120;
+		int Burger = 150;
+		int Pastry = 170;
+		int pizza = 250;
+		int ColdCoffee = 65;
+		int ColdDrinks = 75;
+		int IceTea = 95;
+		int ch;
+		int quantity;
+		String order = null;
+		String again;
+		int total = 0;
+		boolean flag=true;
+		Scanner sc=new Scanner(System.in);
+		
+		// Lets Create a methods for displaying our food items
+		
+do {
+			System.out.println("****** Wel-Come To UR Cafe ******");
+			System.out.println("*****************");
+			System.out.println("                 1. French Fries           120/-");
+			System.out.println("                 2. Burger                 150/-");
+			System.out.println("                 3. Pastry                 100/-");
+			System.out.println("                 4. Pizza                  250/-");
+			System.out.println("                 5. Cold Coffee            65/- ");
+			System.out.println("                 6. Cold Drinks            75/- ");
+			System.out.println("                 7. Ice-Tea                95/- ");
+			System.out.println("                 8. Exit                        ");
+			System.out.println("*****************");
+			System.out.println("                What Do You Want To Order Today ??");
+			System.out.println(" Enter Your Choice ");
+			ch=sc.nextInt();
+sc.nextLine();
+switch (ch) {
+case 1: //French Fries
+	
+	System.out.println("You have Selected French Fries : ");
+	System.out.println();
+	System.out.println("Enter the desired Quatity : ");
+	quantity=sc.nextInt();
+	total=total+quantity*FrenchFries;
+	order=order +"FrenchFries";
+	
+	
+	break;
+	
+case 2: // Burger
+	System.out.println("You have Selected Burger : ");
+	System.out.println();
+	System.out.println("Enter the desired Quatity : ");
+	quantity=sc.nextInt();
+	total=total+quantity*Burger;
+	order=order +"burger";
+
+	break;
+	
+case 3: // Pastry
+	System.out.println("You have Selected Pastry : ");
+	System.out.println();
+	System.out.println("Enter the desired Quatity : ");
+	quantity=sc.nextInt();
+	total=total+quantity*Pastry;
+	order=order +"pastry";
+
+	break;
+	
+case 4: //Pizza
+	System.out.println("You have Selected Pizza : ");
+	System.out.println();
+	System.out.println("Enter the desired Quatity : ");
+	quantity=sc.nextInt();
+	total=total+quantity*pizza;
+	order=order +"pizza";
+
+	break;
+	
+case 5: // ColdCoffee
+	System.out.println("You have Selected ColdCoffee : ");
+	System.out.println();
+	System.out.println("Enter the desired Quatity : ");
+	quantity=sc.nextInt();
+	total=total+quantity*ColdCoffee;
+	order=order +"coldcoffee";
+
+	break;
+	
+case 6: // ColdDrinks
+	System.out.println("You have Selected ColdDrinks : ");
+	System.out.println();
+	System.out.println("Enter the desired Quatity : ");
+	quantity=sc.nextInt();
+	total=total+quantity*ColdDrinks;
+	order=order +"coldDrinks";
+
+	break;
+	
+case 7: // IceTea
+	System.out.println("You have Selected IceTea : ");
+	System.out.println();
+	System.out.println("Enter the desired Quatity : ");
+	quantity=sc.nextInt();
+	total=total+quantity*IceTea;
+	order=order +"icetea";
+
+	break;
+	
+case 8: // Exit
+	System.exit(1);
+	break;
+	
+	default:
+		System.out.println(" Invalid Choice ");
+		break;
+}
+System.out.println(" Do You Want To order Anything Else (Y/N)");
+again=sc.next();
+if(again.equalsIgnoreCase("Y"))
+{
+	flag= true;
+	}
+else if(again.equalsIgnoreCase("N"))
+{
+	generateBill(total);
+	flag=false;
+System.exit(1);
+}
+else {
+	System.out.println(" Invalid Choice ");
+	}
+
+
+}while(flag);
+	}}
+
+	
+	
+		
+	
+
+		

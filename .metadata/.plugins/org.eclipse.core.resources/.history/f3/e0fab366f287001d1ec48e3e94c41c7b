@@ -1,0 +1,11 @@
+package mapExample;
+import java.util.*;
+public class HashMapCourseExample {
+
+	public static void main(String[] args) {
+	
+		HashMap<String ,String> course = new HashMap<>();
+
+	}
+
+}

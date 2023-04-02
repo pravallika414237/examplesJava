@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ClassCreation.java&apos; to &apos;oopsExamples/src/constructorExample&apos;&#x0D;&#x0A;- Original project: &apos;oopsExamples&apos;&#x0D;&#x0A;- Destination element: &apos;oopsExamples/src/constructorExample&apos;&#x0D;&#x0A;- Original element: &apos;oops.class1.example.ClassCreation.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;constructorExample" element1="/src&lt;oops.class1.example{ClassCreation.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1671509597353" units="1" version="1.0"/>
+</session>

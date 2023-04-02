@@ -1,0 +1,13 @@
+package durgaJava8;
+import java.util.Date;
+import java.util.function.*;
+
+public class SupplierExample {
+
+	public static void main(String [] args) {
+		
+		Supplier<Date> s =() -> new Date();
+		
+		System.out.println(s.accept());
+	}
+}

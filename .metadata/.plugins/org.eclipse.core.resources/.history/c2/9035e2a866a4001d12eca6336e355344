@@ -1,0 +1,39 @@
+package lamdaExpression;
+
+import java.util.Scanner;
+
+import javax.xml.validation.Validator;
+
+@FunctionalInterface
+interface Validation {
+
+	boolean validate(String s1, String s2);
+}
+
+public class Source {
+
+//public boolean validate(String s1, String s2) {
+		
+	/*
+	 * Validation v = (s1, s2) -> { return s1.equalsIgnoreCase(s2); }
+	 * 
+	 * return v;
+	 * 
+	 * 
+	 * }
+	 */
+
+	public static void main(String[] args) {
+		
+		Validation v = (s1, s2) -> {
+			return s1.equalsIgnoreCase(s2);
+		};
+
+		Scanner sc = new Scanner(System.in);
+		String uname = sc.nextLine();
+		String upass = sc.nextLine();
+		Source v = new Source();
+		System.out.println(v.validate(uname, upass));
+	}
+}
+}

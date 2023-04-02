@@ -1,0 +1,18 @@
+package durgaJava8;
+
+interface Interf{
+	
+	void add();
+	
+	int square();
+	
+}
+public class AnoynomousInnerClasses {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+	}
+
+}

@@ -1,0 +1,36 @@
+package basicpackage;
+
+public class ThreeDArray {
+
+	public static void main(String[] args) {
+		// int s1[][]= {{41,22,35},{54,93,89}};
+		 //int s2[][]= {{89,58,63},{58,25,20}};
+		String [] name= {"prava","lika"};
+		int marks[][][]=
+			{
+				{
+					{41,22,35},
+					{54,93,89}
+				},
+				{
+					{89,58,63},
+					{58,25,20}
+				}
+		    };
+
+		for(int s[][]:marks) {
+			for(String l:name) {
+			System.out.println("student :"+ l );
+			for(int []i:s) {
+				
+				for(int j:i) {
+					 System.out.print( j+"  ");
+	               }
+		             System.out.println(" ");
+				}
+			}
+			}
+		}
+	}
+
+

@@ -1,0 +1,13 @@
+package basicpackage;
+
+public class TwoDArray {
+
+	public static void main(String[] args) {
+		int[] stu1= {23,48,90,78,23};
+		int[] stu2= {84,98,85,71,84};
+		int[] stu3= {87,85,84,74,85};
+		
+
+	}
+
+}

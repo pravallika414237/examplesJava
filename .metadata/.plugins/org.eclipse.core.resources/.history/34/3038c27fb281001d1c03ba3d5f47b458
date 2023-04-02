@@ -1,0 +1,10 @@
+package HandlingExceptions;
+
+public class IndexOutOfBoundExceptionExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

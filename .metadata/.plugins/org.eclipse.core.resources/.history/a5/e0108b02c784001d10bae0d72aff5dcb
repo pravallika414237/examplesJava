@@ -1,0 +1,43 @@
+package collectionsExamples;
+import java.util.*;
+public class example3 {
+
+	public static void main(String[] args) {
+		
+List  <String> l = new  ArrayList <String> ();
+	//a list interface can be implemented using arraylist , linkedlist , vector, stack.
+l.add("hi");
+l.add("java");
+l.add("abcd");
+l.add("html");
+l.add("csssss");
+
+Iterator i = l.iterator();
+while(i.hasNext()) {
+System.out.println(i.next());
+}
+System.out.println(l);
+
+ArrayList <Integer> l2 = new ArrayList <Integer> ();
+l2.add(25);
+l2.add(85225);
+l2.add(25824);
+l2.add(245235);
+l2.add(21425);
+
+Iterator i2= l2.iterator();
+while(i2.hasNext()){
+	System.out.println(i2.next());
+}
+
+System.out.println(l2);
+	
+System.out.println("remove the value of :  ");
+Scanner s = new Scanner(System.in);
+int a = Integer.parseInt(s.nextLine());
+	
+l2.remove(a);
+System.out.println(l2);
+	}
+
+}

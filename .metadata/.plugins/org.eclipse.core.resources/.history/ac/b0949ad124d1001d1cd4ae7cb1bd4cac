@@ -1,0 +1,8 @@
+package durgaJava8;
+import java.util.function.*;
+public class SupplierExample {
+
+	public static void main(String [] args) {
+		
+	}
+}

@@ -1,0 +1,13 @@
+package collectionsExamples;
+interface example4{
+	
+	void m1(String s);
+}
+public class Example2 {
+
+	public static void main(String[] args) {
+		
+		example4 e = (abc)-> {  System.out.println(abc);};
+	}
+
+}

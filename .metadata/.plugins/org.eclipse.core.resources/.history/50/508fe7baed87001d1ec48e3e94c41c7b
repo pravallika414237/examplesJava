@@ -1,0 +1,19 @@
+package mapExample;
+import java.util.*;
+public class HashmapExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Map m= new HashMap();
+		m.put("pravallika",101);
+		m.put("llika",101);
+		m.put("vallika",101);
+		m.put("ravallika",101);
+		m.put("ika",101);  //duplicates not allowedd
+		System.out.println(m);
+		
+		
+
+	}
+
+}
